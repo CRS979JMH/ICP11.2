@@ -74,15 +74,3 @@ if st.button("Predict Sale Price"):
         # Get prediction from the all-features model
         prediction = model_all.predict(processed_data)
         st.success(f"Predicted Sale Price (All Features Model): ${prediction[0][0]:,.2f}")
-
-import subprocess
-
-# List installed packages
-installed_packages = subprocess.check_output(["pip", "list"]).decode("utf-8")
-print(installed_packages)  # This will show all installed packages in Streamlit logs
-
-# Try installing joblib explicitly
-import os
-os.system("pip install joblib --no-cache-dir")
-
-import joblib  # Try importing again after installation
