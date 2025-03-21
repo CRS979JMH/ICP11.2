@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from tensorflow import keras
 import tensorflow as tf
 
 # === Load pre-trained models and preprocessors ===
