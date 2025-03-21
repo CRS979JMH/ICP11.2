@@ -2,5 +2,5 @@ pandas
 numpy
 scikit-learn
 tensorflow==2.10.0
-joblib
+joblib --no-cache-dir
 streamlit
